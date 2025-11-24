@@ -10,7 +10,8 @@
     "lint": "eslint src --ext .ts,.tsx --report-unused-disable-directives",
     "lint:fix": "eslint src --ext .ts,.tsx --report-unused-disable-directives --fix",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "publish:private": "npm publish"
   },
   "keywords": [],
