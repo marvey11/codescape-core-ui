@@ -1,0 +1,15 @@
+import { CellValue } from "../components/index.js";
+
+export const createNumberValueCellClassNames = (
+  cellValue: CellValue,
+): string | undefined => {
+  if (typeof cellValue === "number") {
+    if (cellValue > 0) {
+      return "text-green-500";
+    }
+    if (cellValue < 0) {
+      return "text-red-500";
+    }
+  }
+  return undefined;
+};
