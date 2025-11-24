@@ -2,6 +2,7 @@
   "name": "@codescape/core-ui",
   "version": "0.1.0",
   "description": "Reusable UI functionality for Codescape products",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
