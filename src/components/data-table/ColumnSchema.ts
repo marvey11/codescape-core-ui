@@ -3,57 +3,57 @@ import { ReactNode, TdHTMLAttributes, ThHTMLAttributes } from "react";
 export type CellValue = number | string | undefined | null;
 
 export interface ValueGetterFunc<TData, TValue> {
-  (params: { data: TData | undefined }): TValue | null | undefined;
+  (_params: { data: TData | undefined }): TValue | null | undefined;
 }
 
 export interface ValueFormatterFunc<TData, TValue> {
-  (params: {
+  (_params: {
     data: TData | undefined;
     value: TValue | null | undefined;
   }): string;
 }
 
 export interface CellClassNamesFunc<TData, TValue> {
-  (params: {
+  (_params: {
     data: TData | undefined;
     value: TValue | null | undefined;
   }): string | string[] | undefined;
 }
 
 export interface CellTitleFunc<TData, TValue> {
-  (params: {
+  (_params: {
     data: TData | undefined;
     value: TValue | null | undefined;
   }): string | undefined;
 }
 
 export interface CellRendererFunc<TData, TValue> {
-  (params: {
+  (_params: {
     data: TData | undefined;
     value: TValue | null | undefined;
   }): ReactNode;
 }
 
 export interface FooterGetterFunc<TData, TValue> {
-  (params: { data: TData[] | undefined }): TValue | null | undefined;
+  (_params: { data: TData[] | undefined }): TValue | null | undefined;
 }
 
 export interface FooterFormatterFunc<TData, TValue> {
-  (params: {
+  (_params: {
     data: TData[] | undefined;
     value: TValue | null | undefined;
   }): string;
 }
 
 export interface FooterClassNamesFunc<TData, TValue> {
-  (params: {
+  (_params: {
     data: TData[] | undefined;
     value: TValue | null | undefined;
   }): string | string[] | undefined;
 }
 
 export interface FooterTitleFunc<TData, TValue> {
-  (params: {
+  (_params: {
     data: TData[] | undefined;
     value: TValue | null | undefined;
   }): string | undefined;

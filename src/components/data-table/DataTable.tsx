@@ -5,7 +5,7 @@ import { CellValue, ColumnSchema } from "./ColumnSchema.js";
 export interface DataTableProps<T> {
   columns: ColumnSchema<T, CellValue>[];
   data: T[];
-  keyExtractor: (item: T) => React.Key;
+  keyExtractor: (_item: T) => React.Key;
 }
 
 export const DataTable = <T,>({
